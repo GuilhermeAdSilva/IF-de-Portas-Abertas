@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --corPrincipal: #F48764;
+    --corComplementar1: #A08177;
+    --corComplementar2: #687572;
+    --corComplementar3: #64F5D3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corPrincipal);
+    box-shadow: 0px 1px 3px 0px var(--corComplementar1);
+}
+
+header > h1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 9vh;
+    text-shadow: 4px 4px 5px var(--corComplementar1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav > a {
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2%;
+    box-shadow: 3px 3px 8px 2px var(--corComplementar2);
+    margin-bottom: 20px;
+}
+
+nav > a:hover {
+    background-color: var(--corComplementar2);
+    border-radius: 30%;
+    transition: 0.5s;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+main > aside {
+    padding: 40px 20px 20px 20px;
+    border-right: 1px solid black;
+    box-shadow: 1px 0px 20px 0px var(--corComplementar1);
+}
+
+aside > a {
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    height: 45px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15%;
+    color: black;
+}
+
+aside > a:hover {
+    font-size: large;
+    color: var(--corComplementar1);
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 7vh;
+    margin: 10px 0px;
+}
+
+section > div.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+figure {
+    margin: 10px;
+    padding: 3px;
+    border: 1px solid black;
+    box-shadow: 3px 2px 12px 3px var(--corComplementar1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure > img {
+    width: 20vw;
+    margin: 7px;
+}
+
+figure > p.nome {
+    font-size: 3vh;
+}
+
+figure > a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--corComplementar3);
+    width: 80px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 1px 1px 1px var(--corComplementar2);
+    margin-bottom: 5px;
+}
+
+figure > a:hover {
+    color: var(--corComplementar1);
+    text-decoration: underline;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000066; 
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto; 
+  padding: 20px;
+  border: 2px solid #333333;
+  width: 400px;
+  border-radius: 8% 0%;
+  box-shadow: 0px 5px 15px #00000066;
+  animation: aparecer 0.3s ease-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2%;
+  font-size: 1em;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--corPrincipal);
+  outline: none;
+}
+
+.btnEnviar {
+  background-color: var(--corComplementar3);
+  padding: 12px;
+  border: none;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+.btnEnviar:hover {
+  background-color: var(--corComplementar1);
+}
+
+#fechar {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h3 {
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+footer {
+    background-color: var(--corPrincipal);
+    text-align: center;
+    box-shadow: 0px -1px 3px 0px var(--corComplementar1);
+}
