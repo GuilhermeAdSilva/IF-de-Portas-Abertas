@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../../css/estiloPrincipal.css">
     <link rel="stylesheet" href="../../css/estiloSecundario.css">
 </head>
+
 <body>
     <header>
         <h1>Patinhas do Amor</h1>
@@ -20,29 +22,34 @@
     <main>
         <section>
             <h2>Trabalhe Conosco</h2>
-            <p>Aqui na Patinhas do Amor, estamos sempre em busca de pessoas apaixonadas por animais e comprometidas com a causa da adoção responsável. Se você é alguém que ama os animais, tem vontade de fazer a diferença e deseja contribuir para um futuro melhor para nossos amigos de quatro patas, nós queremos você na nossa equipe!</p>
-            <p>Seja você um voluntário, um profissional da área de saúde animal, ou um entusiasta que quer ajudar em nossas atividades diárias, temos diversas formas de colaboração. Envie-nos seu currículo e fale um pouco sobre o que o motiva a se juntar a nós. Juntos, podemos transformar muitas vidas.</p>
+            <p>Aqui na Patinhas do Amor, estamos sempre em busca de pessoas apaixonadas por animais e comprometidas com
+                a causa da adoção responsável. Se você é alguém que ama os animais, tem vontade de fazer a diferença e
+                deseja contribuir para um futuro melhor para nossos amigos de quatro patas, nós queremos você na nossa
+                equipe!</p>
+            <p>Seja você um voluntário, um profissional da área de saúde animal, ou um entusiasta que quer ajudar em
+                nossas atividades diárias, temos diversas formas de colaboração. Envie-nos seu currículo e fale um pouco
+                sobre o que o motiva a se juntar a nós. Juntos, podemos transformar muitas vidas.</p>
             <p>Preencha o formulário abaixo para se candidatar!</p>
             <div id="formCandidato">
-                <form>
+                <form id="form">
                     <label>Seu nome:</label>
-                    <input type="text" placeholder="Digite seu nome" required><br><br>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required><br><br>
 
                     <label>Contato:</label>
-                    <input type="text" placeholder="Telefone ou E-mail" required><br><br>
+                    <input type="text" id="contato" placeholder="Telefone ou E-mail" required><br><br>
 
                     <label>Data de nascimento:</label>
-                    <input type="date" required><br><br>
+                    <input type="date" id="dataNascimento" required><br><br>
 
                     <div>
-                        <input type="checkbox" required>
+                        <input type="checkbox" id="checkbox" required>
                         <label>Declaro que tenho interesse em participar do trabalho voluntário.</label><br><br>
                     </div>
-                    
-                    <button type="submit" class="btnEnviar" onclick="mensagem()">Enviar</button>
+
+                    <button type="submit" class="btnEnviar" id="btnEnviar" onclick="mensagem()" disabled>Enviar</button>
                 </form>
             </div>
-        
+
         </section>
     </main>
 
@@ -52,4 +59,5 @@
 
     <script src="../../scripts/candidato.js"></script>
 </body>
+
 </html>
