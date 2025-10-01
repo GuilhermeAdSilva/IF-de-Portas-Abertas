@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patinhas do Amor</title>
+    <link rel="stylesheet" href="../../css/estiloPrincipal.css">
+</head>
+<body>
+    <header>
+        <h1>Patinhas do Amor</h1>
+        <nav>
+            <a href="../../index.html">Início</a>
+            <a href="../menu/quemSomos.html">Quem somos</a>
+            <a href="../menu/faleConosco.html">Fale conosco</a>
+            <a href="../menu/trabalheConosco.html">Trabalhe conosco</a>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <a href="../../index.html">Cães</a>
+            <a href="#">Gatos</a>
+        </aside>
+        <section>
+            <h2>Adoção Responsável!</h2>
+            <div class="imagens">
+                <figure>
+                    <img src="../../img/cat/botinha.jpg" alt="gato">
+                    <p class="nome">Botinha</p>
+                    <p>Idade: 3 anos</p>
+                    <a href="#" class="botaoAdotar" data-animal="Botinha">Adotar</a>
+                </figure>
+
+                <figure>
+                    <img src="../../img/cat/gabo.jpg" alt="gato">
+                    <p class="nome">Gabo</p>
+                    <p>Idade: 2 anos</p>
+                    <a href="#" class="botaoAdotar" data-animal="Gabo">Adotar</a>
+                </figure>
+
+                <figure>
+                    <img src="../../img/cat/leticia.jpg" alt="gato">
+                    <p class="nome">Leticia</p>
+                    <p>Idade: 10 meses</p>
+                    <a href="#" class="botaoAdotar" data-animal="Leticia">Adotar</a>
+                </figure>
+
+                <figure>
+                    <img src="../../img/cat/pandinhaOncinha.jpg" alt="gato">
+                    <p class="nome">Pandinha & Oncinha</p>
+                    <p>Idade: 7 anos</p>
+                    <a href="#" class="botaoAdotar" data-animal="Pandinha & Oncinha">Adotar</a>
+                </figure>
+
+                <figure>
+                    <img src="../../img/cat/pitoco.jpg" alt="gato">
+                    <p class="nome">Pitoco</p>
+                    <p>Idade: 3 anos</p>
+                    <a href="#" class="botaoAdotar" data-animal="Pitoco">Adotar</a>
+                </figure>
+
+                <figure>
+                    <img src="../../img/cat/thammy.jpg" alt="gato">
+                    <p class="nome">Thammy</p>
+                    <p>Idade: 5 meses</p>
+                    <a href="#" class="botaoAdotar" data-animal="Thammy">Adotar</a>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="fechar">&times;</span>
+        <h3>Formulário de Adoção</h3>
+        <form>
+          <label>Nome do animal:</label>
+          <input type="text" id="animal" readonly><br><br>
+
+          <label>Seu nome:</label>
+          <input type="text" placeholder="Digite seu nome" required><br><br>
+
+          <label>Contato:</label>
+          <input type="text" placeholder="Telefone ou E-mail" required><br><br>
+
+          <button type="submit" class="btnEnviar">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+        <p>IF DE PORTAS ABERTAS</p>
+    </footer>
+
+    <script src="../../scripts/formulario.js"></script>
+</body>
+</html>
